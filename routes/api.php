@@ -30,6 +30,10 @@ Route::group(['prefix' => 'user'], function () {
     Route::group(['middleware' => ['auth:sanctum']], function () {
 
         Route::get('/', [UserController::class, 'show']);
+        Route::get('/test', function () {
+
+            return "OK";
+        })->middleware('sanctum.abilities:admin');
     });
 });
 
