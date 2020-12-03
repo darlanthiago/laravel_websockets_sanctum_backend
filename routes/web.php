@@ -19,13 +19,13 @@ Route::get('/', function () {
 });
 
 
-Route::get('/message', function () {
+// Route::get('/message', function () {
 
-    $message = new Message();
+//     $message = new Message();
 
-    $message->title = "Darlan Thiago";
-    $message->body = "Esta mensagem é de teste";
-    $message->save();
-    $success = event(new App\Events\NewMessage($message));
-    return $success;
-});
+//     $message->title = "Darlan Thiago";
+//     $message->body = "Esta mensagem é de teste";
+//     $message->save();
+//     $success = event(new App\Events\NewMessage($message));
+//     return $success;
+// });
