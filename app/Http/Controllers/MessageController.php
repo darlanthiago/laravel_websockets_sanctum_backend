@@ -41,7 +41,7 @@ class MessageController extends Controller
 
         $user = User::findOrFail($message->user_id);
 
-        broadcast(new NewMessage($message, $user));
+        event(new NewMessage($message, $user));
 
         return response()->json($message);
     }
