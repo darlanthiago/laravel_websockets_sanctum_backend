@@ -15,8 +15,8 @@ return [
             'name' => env('APP_NAME'),
             'key' => env('PUSHER_APP_KEY'),
             'secret' => env('PUSHER_APP_SECRET'),
-            'enable_client_messages' => true,
-            'enable_statistics' => true,
+            'enable_client_messages' => env('WEBSOCKETS_ENEBLE_CLIENTS_MESSAGES'),
+            'enable_statistics' => env('WEBSOCKETS_ENEBLE_STATISTICS'),
         ],
     ],
 
@@ -34,7 +34,7 @@ return [
  * Leave this empty if you want to accept requests from all hosts.
  */
     'allowed_origins' => [
-        //
+        env('CORS')
     ],
 
     /*
