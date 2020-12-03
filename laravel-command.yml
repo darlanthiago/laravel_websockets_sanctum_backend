@@ -3,7 +3,7 @@ apps:
     script: artisan
     watch: true
     interpreter: php
-    args: "webscokets:serve"
+    args: "websockets:serve"
     restart_delay: 3000
     error_file: ./storage/logs/webscokets.error.log
     out_file: ./storage/logs/webscokets.out.log
