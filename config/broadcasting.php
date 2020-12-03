@@ -41,10 +41,7 @@ return [
                 'host' => env('WEBSOCKETS_HOST'),
                 'port' => env('WEBSOCKETS_PORT'),
                 'scheme' => env('WEBSOCKETS_SCHEME'),
-                'curl_options' => [
-                    CURLOPT_SSL_VERIFYHOST => 0,
-                    CURLOPT_SSL_VERIFYPEER => 0,
-                ]
+
             ],
         ],
 
